@@ -6,5 +6,5 @@ import "github.com/apid/apid-core"
 // we take this opportunity to tell apid to call our initPlugin()
 // function when it does InitializePlugins().
 func init() {
-	apid.RegisterPlugin(initPlugin)
+	apid.RegisterPlugin(initPlugin, pluginData)
 }
